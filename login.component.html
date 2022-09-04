@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+</head>
+<body style="margin:0px">
+  <div class="container">
+    <div class="form">
+      <!------ Login Form -------- -->
+      <form class="login" (submit)="submit()">
+        
+        <div class="formGroup">
+          <input type="email" [formControl]="email"  placeholder="Email ID" name="email" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" [formControl]="password" id="password" placeholder="Password" required autocomplete="off">
+        </div><br><br>
+        <div class="formGroup">
+          <button type="submit" class="btn2">Login</button>
+        </div>
+      </form><br>
+      <p style="color:white;text-align:center">Don't have an account? <a routerLink="/register">Register</a> here..</p>
+      </div>
+      </div>
+</body>
